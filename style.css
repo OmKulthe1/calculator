@@ -1,0 +1,104 @@
+body {
+    background-color: #272829;
+    color: #272829;
+    font-family: "PT Mono", monospace;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.base {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.display {
+    display: flex;
+    margin-top: 100px;
+    font-size: 32px;
+    background-color: #D8D9DA;
+    width: 480px;
+    height: 50px;
+    padding: 10px;
+    text-align: right;
+    align-items: center;
+    justify-content: flex-end;
+    border-radius: 4px;
+    border-width: 0;
+}
+
+.buttons {
+    display: grid;
+    margin: 10px;
+    width: 500px;
+    height: 400px;
+    grid-template-columns: auto auto auto auto;
+    gap: 10px;
+}
+/* 
+.button {
+    background-color: white;
+    border: none;
+    outline: none;
+    padding: none;
+} */
+
+/* CSS */
+.button {
+  align-items: center;
+  appearance: none;
+  background-color: #D8D9DA;
+  border-radius: 4px;
+  border-width: 0;
+  /* box-shadow: rgba(45, 35, 66, 0.4) 0 2px 4px,rgba(45, 35, 66, 0.3) 0 7px 13px -3px,#D6D6E7 0 -3px 0 inset;
+  box-sizing: border-box; */
+  cursor: pointer;
+  display: inline-flex;
+  height: auto;
+  justify-content: center;
+  line-height: 1;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 16px;
+  padding-right: 16px;
+  position: relative;
+  text-align: left;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+}
+
+.button:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+#clear-button ,
+#zero-button{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+#delete-button {
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+/* #clear-button,
+#delete-button,
+#equals-button {
+    background-color: #61677A;
+} */
+
